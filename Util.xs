@@ -56,16 +56,6 @@ CODE:
 OUTPUT:
 	RETVAL
 
-bool
-regexp_is_anchored (ref)
-	SV *ref
-CODE:
-	REGEXP *re;
-	re = SvRX(ref);
-	RETVAL = RX_EXTFLAGS(re) & RXf_IS_ANCHORED;
-OUTPUT:
-	RETVAL
-
 int
 _regexp_engine_id (ref)
 	SV *ref

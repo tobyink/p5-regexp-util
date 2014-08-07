@@ -19,7 +19,6 @@ our @EXPORT_OK = qw(
 	is_regexp
 	regexp_seen_evals
 	regexp_is_foreign
-	regexp_is_anchored
 	serialize_regexp
 	deserialize_regexp
 );
