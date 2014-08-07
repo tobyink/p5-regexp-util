@@ -4,3 +4,9 @@
 	issued  2014-08-07;
 	label   "Initial release".
 
+`Regexp-Util 0.002 cpan:TOBYINK`
+	issued  2014-08-08;
+	changeset [
+		item "Add Hash::Util link to SEE ALSO"^^Documentation;
+		item "Remove the regexp_is_anchored function because it required Perl 5.20 to compile."^^Removal;
+	].

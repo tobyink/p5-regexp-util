@@ -5,7 +5,7 @@ use warnings;
 package Regexp::Util;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.001';
+our $VERSION   = '0.002';
 
 require XSLoader;
 XSLoader::load(__PACKAGE__, $VERSION);
