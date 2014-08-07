@@ -171,7 +171,8 @@ L<re>.
 
 Other util modules:
 L<Scalar::Util>,
-L<List::Util>.
+L<List::Util>,
+L<Hash::Util>.
 
 =head1 AUTHOR
 
