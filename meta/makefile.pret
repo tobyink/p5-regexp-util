@@ -3,7 +3,6 @@
 @prefix : <http://ontologi.es/doap-deps#>.
 
 `Regexp-Util`
-	:test-requirement       [ :on "Test::More 0.96"^^:CpanId ];
-	:develop-recommendation [ :on "Dist::Inkt 0.001"^^:CpanId ];
-	.
+	:runtime-requirement  [ :on "perl 5.010"^^:CpanId ];
+	:test-requirement     [ :on "Test::More 0.92"^^:CpanId ].
 

@@ -4,7 +4,7 @@
 
 =head1 PURPOSE
 
-Test that Regexp::Util compiles.
+Test that Regexp::Util compiles and seems to work.
 
 =head1 AUTHOR
 
@@ -22,9 +22,10 @@ the same terms as the Perl 5 programming language system itself.
 
 use strict;
 use warnings;
-use Test::More;
+use Test::More tests => 1;
 
-use_ok('Regexp::Util');
+use Regexp::Util qw( :all );
 
-done_testing;
+my $re = deserialize_regexp serialize_regexp qr/^foo$/;
 
+ok("foo" =~ $re and not "fool" =~ $re);
