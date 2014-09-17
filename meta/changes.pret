@@ -10,3 +10,9 @@
 		item "Add Hash::Util link to SEE ALSO"^^Documentation;
 		item "Remove the regexp_is_anchored function because it required Perl 5.20 to compile."^^Removal;
 	].
+
+`Regexp-Util 0.003 cpan:TOBYINK`
+	issued  2014-09-17;
+	changeset [
+		item "Remove with a newer version of Dist::Inkt to fix META.json error."^^Packaging;
+	].
