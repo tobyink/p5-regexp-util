@@ -4,5 +4,6 @@
 
 `Regexp-Util`
 	:runtime-requirement  [ :on "perl 5.010"^^:CpanId ];
+	:runtime-requirement  [ :on "Exporter::Tiny"^^:CpanId ];
 	:test-requirement     [ :on "Test::More 0.92"^^:CpanId ].
 
