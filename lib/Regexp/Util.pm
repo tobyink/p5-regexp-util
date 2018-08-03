@@ -138,10 +138,6 @@ Returns true if C<< $re >> uses a regexp engine plugin.
 (Since Perl 5.10, it has been possible to use regexp engine plugins,
 such as L<re::engine::PCRE> and L<re::engine::RE2>.)
 
-=item C<< regexp_is_anchored($re) >>
-
-Returns true if C<< $re >> is anchored at the start (e.g. C<< qr/^foo/ >>).
-
 =item C<< serialize_regexp($re) >>
 
 Serializes the regexp to a string of Perl code.
