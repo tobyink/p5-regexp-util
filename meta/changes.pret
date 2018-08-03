@@ -24,3 +24,9 @@
 		item "Offer to re-export functions from re.pm."^^Change;
 		item "Remove mention of regexp_is_anchored which disappeared in version 0.002."^^Documentation;
 	].
+
+`Regexp-Util 0.005 cpan:TOBYINK`
+	issued  2018-08-03;
+	changeset [
+		item "Fix dependencies."^^Packaging;
+	].
