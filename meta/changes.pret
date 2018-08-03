@@ -17,8 +17,8 @@
 		item "Remove with a newer version of Dist::Inkt to fix META.json error."^^Packaging;
 	].
 
-`Regexp-Util 0.003 cpan:TOBYINK`
-	issued  2014-09-17;
+`Regexp-Util 0.004 cpan:TOBYINK`
+	issued  2018-08-03;
 	changeset [
 		item "Use Exporter::Tiny instead of Exporter.pm."^^Change;
 		item "Offer to re-export functions from re.pm."^^Change;
