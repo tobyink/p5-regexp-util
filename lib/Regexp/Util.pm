@@ -12,8 +12,8 @@ XSLoader::load(__PACKAGE__, $VERSION);
 
 eval 'require re';
 
-require Exporter;
-our @ISA = qw( Exporter );
+require Exporter::Tiny;
+our @ISA = qw( Exporter::Tiny );
 our @EXPORT;
 our @EXPORT_OK = qw(
 	is_regexp
@@ -21,6 +21,8 @@ our @EXPORT_OK = qw(
 	regexp_is_foreign
 	serialize_regexp
 	deserialize_regexp
+	
+	regexp_pattern regmust regname regnames regnames_count
 );
 our %EXPORT_TAGS = (
 	all     => \@EXPORT_OK,
@@ -95,6 +97,26 @@ sub deserialize_regexp
 	Carp::croak("Cannot deserialize regexp: eval returned $re");
 }
 
+sub regexp_pattern {
+	goto \&re::regexp_pattern;
+}
+
+sub regmust {
+	goto \&re::regmust;
+}
+
+sub regname {
+	goto \&re::regname;
+}
+
+sub regnames {
+	goto \&re::regnames;
+}
+
+sub regnames_count {
+	goto \&re::regnames_count;
+}
+
 1;
 
 __END__
@@ -153,6 +175,11 @@ the return value is a regexp, so should be I<somewhat> safer than
 C<< eval($str) >>.
 
 =back
+
+This module can also re-export C<< regexp_pattern($re) >>,
+C<< regmust($re) >>, C<< regname($name, $all) >>,
+C<< regnames($all) >>, and C<< regnames_count() >> from L<re>
+for convenience.
 
 =head1 BUGS
 
