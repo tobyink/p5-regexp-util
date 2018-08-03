@@ -16,3 +16,11 @@
 	changeset [
 		item "Remove with a newer version of Dist::Inkt to fix META.json error."^^Packaging;
 	].
+
+`Regexp-Util 0.003 cpan:TOBYINK`
+	issued  2014-09-17;
+	changeset [
+		item "Use Exporter::Tiny instead of Exporter.pm."^^Change;
+		item "Offer to re-export functions from re.pm."^^Change;
+		item "Remove mention of regexp_is_anchored which disappeared in version 0.002."^^Documentation;
+	].
